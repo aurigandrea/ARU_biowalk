@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Map with Modals</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Image Map Title</h1>
+            <nav class="desktop-nav">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+            </nav>
+            <div class="mobile-menu">
+                <button class="hamburger" id="hamburger">&#9776;</button>
+                <nav class="mobile-nav" id="mobile-nav">
+                    <a href="#index.html">Home</a>
+                    <a href="#">About</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="image-map-container">
+        <img src="../img/map.png" usemap="#image-map" alt="Image Map" class="responsive-image">
+        <map name="image-map">
+            <area shape="rect" coords="1817,654,1949,553" href="#" data-coords="1817,654,1949,553" alt="Spot 1" data-spot="1">
+            <area shape="rect" coords="1411,507,1533,606" href="#" data-coords="1411,507,1533,606" alt="Spot 2" data-spot="2">
+            <area shape="rect" coords="1228,477,1295,572" href="#" data-coords="1228,477,1295,572" alt="Spot 3" data-spot="3">
+            <area shape="rect" coords="1022,568,1091,662" href="#" data-coords="1022,568,1091,662" alt="Spot 4" data-spot="4">
+            <area shape="rect" coords="561,1127,656,1220" href="#" data-coords="561,1127,656,1220" alt="Spot 5" data-spot="5">
+            <area shape="rect" coords="1028,1121,1135,1230" href="#" data-coords="1028,1121,1135,1230" alt="Spot 6" data-spot="6">
+        </map>
+    </div>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" data-spot="1">&times;</span>
+            <p>Content for Spot 1</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" data-spot="2">&times;</span>
+            <p>Content for Spot 2</p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" data-spot="3">&times;</span>
+            <p>Content for Spot 3</p>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" data-spot="4">&times;</span>
+            <p>Content for Spot 4</p>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" data-spot="5">&times;</span>
+            <p>Content for Spot 5</p>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" data-spot="6">&times;</span>
+            <p>Content for Spot 6</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
