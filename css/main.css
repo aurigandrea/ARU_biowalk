@@ -6,6 +6,11 @@ body {
     box-sizing: border-box;
 }
 
+ html, body {
+      height: 100%;
+      overflow: auto;
+    }
+
 header {
     background-color: #333;
     color: #fff;
@@ -27,8 +32,13 @@ header {
 }
 
 h1 {
-    margin: 0;
+    margin: 1em;
     font-size: 24px;
+}
+
+h2 {
+    text-align: center;
+    margin: 1em;
 }
 
 nav {
@@ -84,7 +94,7 @@ nav a {
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 1000; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -100,8 +110,16 @@ nav a {
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
+    z-index: 1000; /* Sit on top */
+        overflow: auto; /* Enable scroll if needed */
+
 }
 
+.modal-content img{
+    width: 50%;
+        overflow: auto; /* Enable scroll if needed */
+
+}
 .close {
     color: #aaa;
     float: right;
@@ -126,6 +144,17 @@ footer {
     width: 100%;
 }
 
+.about {
+    overflow: auto;
+}
+
+.about img {
+        display: block;
+    margin-left: auto;
+  margin-right: auto;
+    max-width: 80%;
+}
+
 @media (min-width: 768px) {
     .desktop-nav {
         display: flex;
@@ -138,4 +167,13 @@ footer {
     .mobile-nav {
         display: none;
     }
-}
+
+      html, body {
+        height: auto;
+        overflow: auto;
+      }
+
+      .container {
+        overflow: auto;
+      }
+    }
